@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <script src="https://kit.fontawesome.com/0d47fb2970.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="script.js" as="script">
+    <meta name="google-site-verification" content="pxJo0A9aIZX649WfXdygbH1GTL1jGLrP3Z4N36ZDy9k" />
+</head>
+<body>
+    <div class="page-content-style">
+        <div class="container">
+
+            <div id="buttons"></div>
+            <div>
+            <p class="btn-control">
+                <i class="fas fa-play-circle play-btn"></i>
+                <i class="fas fa-pause-circle pause-btn"></i>
+                <i class="fas fa-stop-circle stop-btn"></i>
+                <i class="fas fa-music autoplay-all-songs"></i>
+                <a class="navigate-btn" href="/docs/index.html">HOME</a>
+                <a class="navigate-btn" href="/docs/drum.html">BRUM & BASS</a>
+            </p>
+            </div>
+
+            <audio src="songs/baracholka/candy-shop.mp3" id="candy-shop" class="song first-song"></audio>
+            <audio src="songs/baracholka/in-da-club.mp3" id="in-da-club" class="song"></audio>
+            <audio src="songs/baracholka/baby-be-me.mp3" id="baby-be-me" class="song"></audio>
+            <audio src="songs/baracholka/bad-guy.mp3" id="bad-guy" class="song"></audio>
+            <audio src="songs/baracholka/do-not-go-breaking-my-heart.mp3" id="do-not-go-breaking-my-heart" class="song"></audio>
+            <audio src="songs/baracholka/drunk-in-love.mp3" id="drunk-in-love" class="song"></audio>
+            <audio src="songs/baracholka/god-is-a-woman.mp3" id="god-is-a-woman" class="song"></audio>
+            <audio src="songs/baracholka/left-outside-alone.mp3" id="left-outside-alone" class="song"></audio>
+            <audio src="songs/baracholka/mercy.mp3" id="mercy" class="song"></audio>
+            <audio src="songs/baracholka/no-diggity.mp3" id="no-diggity" class="song"></audio>
+            <audio src="songs/baracholka/ocean-eyes.mp3" id="ocean-eyes" class="song"></audio>
+            <audio src="songs/baracholka/try-again.mp3" id="try-again" class="song"></audio>
+            <audio src="songs/baracholka/a-thousand-years.mp3" id="a-thousand-years" class="song"></audio>
+            <audio src="songs/baracholka/bad-habits.mp3" id="bad-habits" class="song"></audio>
+            <audio src="songs/baracholka/disturbed-the-sound-of-silence.mp3" id="disturbed-the-sound-of-silence" class="song"></audio>
+            <audio src="songs/baracholka/forever.mp3" id="forever" class="song"></audio>
+            <audio src="songs/baracholka/gasolina.mp3" id="gasolina" class="song"></audio>
+            <audio src="songs/baracholka/genie-in-a-bottle.mp3" id="genie-in-a-bottle" class="song"></audio>
+            <audio src="songs/baracholka/home.mp3" id="home" class="song"></audio>
+            <audio src="songs/baracholka/how-deep-is-your-love.mp3" id="how-deep-is-your-love" class="song"></audio>
+            <audio src="songs/baracholka/hymn-for-the-weekend.mp3" id="hymn-for-the-weekend" class="song"></audio>
+            <audio src="songs/baracholka/i-am-on-fire.mp3" id="i-am-on-fire" class="song"></audio>
+            <audio src="songs/baracholka/it-is-not-over.mp3" id="it-is-not-over" class="song"></audio>
+            <audio src="songs/baracholka/last-night.mp3" id="last-night" class="song"></audio>
+            <audio src="songs/baracholka/lights.mp3" id="lights" class="song"></audio>
+            <audio src="songs/baracholka/locked-out-of-heaven.mp3" id="locked-out-of-heaven" class="song"></audio>
+            <audio src="songs/baracholka/lose-yourself.mp3" id="lose-yourself" class="song"></audio>
+            <audio src="songs/baracholka/love-the-way-you-lie.mp3" id="love-the-way-you-lie" class="song"></audio>
+            <audio src="songs/baracholka/musicalienstyle.mp3" id="musicalienstyle" class="song"></audio>
+            <audio src="songs/baracholka/party-up.mp3" id="party-up" class="song"></audio>
+            <audio src="songs/baracholka/princess-of-china.mp3" id="princess-of-china" class="song"></audio>
+            <audio src="songs/baracholka/riding.mp3" id="riding" class="song"></audio>
+            <audio src="songs/baracholka/the-motto.mp3" id="the-motto" class="song"></audio>
+            <audio src="songs/baracholka/the-real-slim-shady.mp3" id="the-real-slim-shady" class="song"></audio>
+            <audio src="songs/baracholka/toxic.mp3" id="toxic" class="song"></audio>
+            <audio src="songs/baracholka/under-your-spell.mp3" id="under-your-spell" class="song"></audio>
+            <audio src="songs/baracholka/venom.mp3" id="venom" class="song"></audio>
+            <audio src="songs/baracholka/wagon-wheel.mp3" id="wagon-wheel" class="song"></audio>
+            <audio src="songs/baracholka/waiting-for-superman.mp3" id="waiting-for-superman" class="song"></audio>
+            <audio src="songs/baracholka/what-these-bitches-want.mp3" id="what-these-bitches-want" class="song"></audio>
+            <audio src="songs/baracholka/without-me.mp3" id="without-me" class="song"></audio>
+            <audio src="songs/baracholka/bailando.mp3" id="bailando" class="song"></audio>
+            <audio src="songs/baracholka/dare.mp3" id="dare" class="song"></audio>
+            <audio src="songs/baracholka/do-not-let-go.mp3" id="do-not-let-go" class="song"></audio>
+            <audio src="songs/baracholka/going-under.mp3" id="going-under" class="song"></audio>
+            <audio src="songs/baracholka/hollaback-girl.mp3" id="hollaback-girl" class="song"></audio>
+            <audio src="songs/baracholka/let-me-blow-ya-mind.mp3" id="let-me-blow-ya-mind" class="song"></audio>
+            <audio src="songs/baracholka/london-bridge.mp3" id="london-bridge" class="song"></audio>
+            <audio src="songs/baracholka/low.mp3" id="low" class="song"></audio>
+            <audio src="songs/baracholka/new-york-new-york.mp3" id="new-york-new-york" class="song"></audio>
+            <audio src="songs/baracholka/open-your-eyes.mp3" id="open-your-eyes" class="song"></audio>
+            <audio src="songs/baracholka/pony.mp3" id="pony" class="song"></audio>
+            <audio src="songs/baracholka/tonight.mp3" id="tonight" class="song"></audio>
+            <audio src="songs/baracholka/you-do-not-know.mp3" id="you-do-not-know" class="song"></audio>
+            <audio src="songs/baracholka/again.mp3" id="again" class="song"></audio>
+            <audio src="songs/baracholka/because-of-you.mp3" id="because-of-you" class="song"></audio>
+            <audio src="songs/baracholka/body.mp3" id="body" class="song"></audio>
+            <audio src="songs/baracholka/broken.mp3" id="broken" class="song"></audio>
+            <audio src="songs/baracholka/closer.mp3" id="closer" class="song"></audio>
+            <audio src="songs/baracholka/cold.mp3" id="cold" class="song"></audio>
+            <audio src="songs/baracholka/everything.mp3" id="everything" class="song"></audio>
+            <audio src="songs/baracholka/family-affair.mp3" id="family-affair" class="song"></audio>
+            <audio src="songs/baracholka/girls-like-you.mp3" id="girls-like-you" class="song"></audio>
+            <audio src="songs/baracholka/hot-in-here.mp3" id="hot-in-here" class="song"></audio>
+            <audio src="songs/baracholka/i-like-me-better.mp3" id="i-like-me-better" class="song"></audio>
+            <audio src="songs/baracholka/in-the-end.mp3" id="in-the-end" class="song"></audio>
+            <audio src="songs/baracholka/just-a-dream.mp3" id="just-a-dream" class="song"></audio>
+            <audio src="songs/baracholka/makes-me-wonder.mp3" id="makes-me-wonder" class="song"></audio>
+            <audio src="songs/baracholka/nothing-breaks-like-a-heart.mp3" id="nothing-breaks-like-a-heart" class="song"></audio>
+            <audio src="songs/baracholka/nothing-else-matters.mp3" id="nothing-else-matters" class="song"></audio>
+            <audio src="songs/baracholka/numb.mp3" id="numb" class="song"></audio>
+            <audio src="songs/baracholka/party-people.mp3" id="party-people" class="song"></audio>
+            <audio src="songs/baracholka/poker-face.mp3" id="poker-face" class="song"></audio>
+            <audio src="songs/baracholka/tornado.mp3" id="tornado" class="song"></audio>
+            <audio src="songs/baracholka/you-and-me.mp3" id="you-and-me" class="song"></audio>
+            <audio src="songs/baracholka/dark-horse.mp3" id="dark-horse" class="song"></audio>
+            <audio src="songs/baracholka/et.mp3" id="et" class="song"></audio>
+            <audio src="songs/baracholka/hero.mp3" id="hero" class="song"></audio>
+            <audio src="songs/baracholka/hideaway.mp3" id="hideaway" class="song"></audio>
+            <audio src="songs/baracholka/i-know-you-want-me.mp3" id="i-know-you-want-me" class="song"></audio>
+            <audio src="songs/baracholka/like-this.mp3" id="like-this" class="song"></audio>
+            <audio src="songs/baracholka/miss-independent.mp3" id="miss-independent" class="song"></audio>
+            <audio src="songs/baracholka/ms-jackson.mp3" id="ms-jackson" class="song"></audio>
+            <audio src="songs/baracholka/need-you-now.mp3" id="need-you-now" class="song"></audio>
+            <audio src="songs/baracholka/satisfy-you.mp3" id="satisfy-you" class="song"></audio>
+            <audio src="songs/baracholka/tell-me.mp3" id="tell-me" class="song"></audio>
+            <audio src="songs/baracholka/wild-awake.mp3" id="wild-awake" class="song"></audio>
+            <audio src="songs/baracholka/all-of-the-lights.mp3" id="all-of-the-lights" class="song"></audio>
+            <audio src="songs/baracholka/alors-on-danse.mp3" id="alors-on-danse" class="song"></audio>
+            <audio src="songs/baracholka/blinding-lights.mp3" id="blinding-lights" class="song"></audio>
+            <audio src="songs/baracholka/broken-l.mp3" id="broken-l" class="song"></audio>
+            <audio src="songs/baracholka/carry-on-my-wayward-son.mp3" id="carry-on-my-wayward-son" class="song"></audio>
+            <audio src="songs/baracholka/i-forgive-you.mp3" id="i-forgive-you" class="song"></audio>
+            <audio src="songs/baracholka/river.mp3" id="river" class="song"></audio>
+            <audio src="songs/baracholka/still.mp3" id="still" class="song"></audio>
+            <audio src="songs/baracholka/thong-song.mp3" id="thong-song" class="song"></audio>
+            <audio src="songs/baracholka/waiting-all-night.mp3" id="waiting-all-night" class="song"></audio>
+            <audio src="songs/baracholka/where-are-you-now.mp3" id="where-are-you-now" class="song"></audio>
+            <audio src="songs/baracholka/where-have-you-been.mp3" id="where-have-you-been" class="song"></audio>
+            <audio src="songs/baracholka/wherever-you-will-go.mp3" id="wherever-you-will-go" class="song"></audio>
+            <audio src="songs/baracholka/who-do-you-love.mp3" id="who-do-you-love" class="song"></audio>
+            <audio src="songs/baracholka/beliver.mp3" id="beliver" class="song"></audio>
+            <audio src="songs/baracholka/down-on-me.mp3" id="down-on-me" class="song"></audio>
+            <audio src="songs/baracholka/hey-daddy.mp3" id="hey-daddy" class="song"></audio>
+            <audio src="songs/baracholka/i-am-real.mp3" id="i-am-real" class="song"></audio>
+            <audio src="songs/baracholka/let-me-think-about-it.mp3" id="let-me-think-about-it" class="song"></audio>
+            <audio src="songs/baracholka/no-scrubs.mp3" id="no-scrubs" class="song"></audio>
+            <audio src="songs/baracholka/pray-for-me.mp3" id="pray-for-me" class="song"></audio>
+            <audio src="songs/baracholka/say-something.mp3" id="say-something" class="song"></audio>
+            <audio src="songs/baracholka/the-hill.mp3" id="the-hill" class="song"></audio>
+            <audio src="songs/baracholka/unsteady.mp3" id="unsteady" class="song"></audio>
+            <audio src="songs/baracholka/yeah.mp3" id="yeah" class="song"></audio>
+    
+        <!-- <div id="buttons"></div> -->
+        </div>
+        <!-- <p class="btn-control">
+            <i class="fas fa-play-circle play-btn"></i>
+            <i class="fas fa-pause-circle pause-btn"></i>
+            <i class="fas fa-stop-circle stop-btn"></i>
+            <i class="fas fa-music autoplay-all-songs"></i>
+        </p> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

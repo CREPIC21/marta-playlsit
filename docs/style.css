@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Itim&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-content {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.page-content::before {
+    content: "";
+    background-image: url("images/studio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.page-content-style {
+    background-image: linear-gradient(to right, #3a6186, #89253e);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding-bottom: 65px; */
+    padding-top: 100px;
+    padding-bottom: 7px;
+}
+
+.container-index-page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding-bottom: 65px; */
+}
+
+.folder-btn {
+    display: block;
+    padding: 60px 100px 60px 100px;
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    transition: color 1.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    /* z-index: 2; */
+}
+
+.navigate-btn {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 35%;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    transition: color 1.5s;
+}
+
+#buttons {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: inherit;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    transition: color 1.5s;
+    z-index: 2;
+}
+
+.currently-playing {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-control {
+    /* position: absolute; */
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px 0;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    text-align: center;
+    z-index: 10;
+}
+
+.btn:hover, .folder-btn:hover, .navigate-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+}
+
+.btn-control i:hover {
+    color: black;
+}
+
+.btn-control i.fas {
+    font-size: 1.7rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 1.5s;
+}
+
+.fa-compact-disc {
+    font-size: 1rem;
+    margin-left: 15px;
+    outline: none;
+    line-height: 0;
+    animation-name: spinning;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinning {
+    0% {transform: rotate(0deg); color: black;}
+    25%{transform: rotate(144deg); color: white;}
+    50%{transform: rotate(216deg); color: black;}
+    75%{transform: rotate(288deg); color: white;}
+    100%{transform: rotate(360deg);color: black;}
+}
+
+
+@media (max-width: 1000px) {
+    .btn {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        width: 55%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn {
+        width: 80%;
+    }
+
+    .container {
+        margin: 50px auto 50px auto;
+    }
+
+    #buttons {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .btn-control {
+        width: 80%;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
